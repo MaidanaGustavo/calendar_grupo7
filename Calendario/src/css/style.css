@@ -1,0 +1,161 @@
+*{
+	margin: 0;
+}
+
+/* Nav Bar */
+
+nav{
+	font-size: 1em;
+	background-color: #1e272e;
+}
+nav ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	
+}
+nav ul li {
+	padding: 20px 2px;
+	flex: auto;
+	text-align: center;
+}
+
+nav ul li a{
+	text-decoration: none;
+	list-style: none;
+	color: #ffd32a;
+}
+nav ul li a:hover{
+	color: #3c40c6;
+}
+
+/** Hero */
+
+.hero{
+	height: 40em;
+	background: url(../img/hero.jpg);
+	background-size: cover;
+	position: relative;
+}
+.conteudo{
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+    background:  rgba(0, 0, 163, 0.2);
+}
+.titulo{
+	font-family: 'Comic Neue', cursive;
+	font-size: 48pt;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #485460;
+}
+
+.subtitulo{
+	font-family: 'Liu Jian Mao Cao', cursive;
+	font-size: 32pt;
+	display: flex;
+	justify-content: center;
+	color: #3c40c6;
+}
+
+/* Sobre */
+.about{
+	background-color: #485460;
+	font-family: 'Comic Neue', cursive;
+	padding: 15px 35px;
+	display: flex;
+	flex-wrap: nowrap;
+	color: #ffa801;
+}
+.desc{
+	text-align: center;
+}
+.desc h2{
+	font-size: 32pt;
+}
+.desc .arte img{
+	width: 500px;
+	height : 350;
+}
+/* Equipe */
+.equipe{
+	background-color: #808e9b;
+	display: flex;
+	padding: 75px 75px;
+	display: flex;
+}
+.avatar{
+	padding: 75px 25px;
+}
+.avatar img{
+	width: 250px;
+	height: 150px;
+	border-radius: 50%;
+}
+.avatar i{
+	padding: 5px;
+}
+.avatar a {
+	text-decoration: none;
+	color: #1e272e;
+}
+.avatar a:hover{
+	color: #4bcffa;
+}
+
+.titulo-equipe{
+	position: absolute;
+	left: 550px;
+	font-size: 28pt;
+	padding-bottom: 25px;
+	color: #d2dae2;
+}
+
+/* Acessar */
+
+.acessar{
+	background-color: #485460;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 150px 25px;	
+}
+.acessar button{
+	height: 50px;
+	width: 250px;
+	background-color: #1e272e;
+	color: #ffd32a;
+	padding: 5px;
+	font-size: 16pt;
+	border-radius: 4px;
+	border-color: #485460;
+	display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  margin-left: 135px;
+}
+.acessar h3{
+	padding: 75px 75px;
+	font-size: 24pt;
+	color: #d2dae2;
+}
+.acessar button:hover, .acessar button:focus, .acessar button:active {
+  	-webkit-transform: scale(1.1);
+ 	 transform: scale(1.1);
+	 cursor: pointer;
+}
+/* Rodape */
+.rodape{
+	padding: 25px;
+	text-align: center;
+	background-color: #808e9b;
+	color: #d2dae2;
+}
