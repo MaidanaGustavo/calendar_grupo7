@@ -10,7 +10,7 @@ Com a possibilidade de adicionar notas e eventos, o Personal Calendar foi desenv
   - Para dispositivos móveis : Android e IOS.
   
 # Como Executar 
-  Para usar a aplicação basta entrar no link [Personal Calendar](https://www.personalcalendar.com.br)
+  Para usar a aplicação basta entrar no link [Personal Calendar](https://personalcalendar.000webhostapp.com)
 # Usando o Personal Calendar 
   - Na aplicação você poderá: 
       - Fazer um cadastro para poder ter acesso ao seu proprio calendário.
