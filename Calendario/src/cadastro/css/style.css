@@ -1,0 +1,61 @@
+body{
+	background-color:#575fcf;
+}
+.cadastro-box{
+	background-color: white;
+	width: 400px;
+	height: 580px;
+	margin: 40px auto 0px;
+	border-radius: 5px;
+}
+.cadastro-box-label{
+	height: 45px;
+	text-align: center;
+	font: bold 14px/45px sans-serif;
+	border-bottom: 1px solid;
+	box-shadow: 1px 0px 3px black;
+	color: #555555;
+	text-shadow: 1px 0px 1px white; 
+}
+.dados{
+	margin: 20px;
+	padding: 5px;
+	background-color: #f2f5f7;
+	border-radius: 3px;
+}
+.dados input{
+	width: 310px;
+	height: 35px;
+	padding-left: 5px;
+	font: normal 13px sans-serif;
+	color: #333;
+	border-radius: 3px;
+	border: 1px solid #bfc4c6;
+	outline: none;
+}
+.dados:hover{
+	background-color: #e0f1fc;
+}
+.dados:hover input{
+	border-color: #3c40c6;
+}
+
+.botao button{
+	border-radius: 4px;
+	padding: 15px 25px;
+	margin-left: 3px;
+	border: 2px solid #1e272e;
+	background-color: #3c40c6;
+	color: #fff;
+}
+.botao button:hover{
+	background-color: #fff;
+	color:  #3c40c6;
+	cursor: pointer;
+}
+.imagem img{
+	width: 350px;
+	height: 250px;
+	position: absolute;
+	top: 200px;
+}

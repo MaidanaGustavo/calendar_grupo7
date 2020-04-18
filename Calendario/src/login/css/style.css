@@ -28,7 +28,7 @@ body{
 			height: 35px;
 			padding-left: 5px;
 			font: normal 13px sans-serif;
-			color: #aeaeae;
+			color: #333;
 			border-radius: 3px;
 			border: 1px solid #bfc4c6;
 			outline: none;
@@ -71,4 +71,14 @@ body{
 			height: 250px;
 			position: absolute;
 			top: 200px;
+		}
+		
+		.forgot a{
+			color: #fff;
+			margin-left: 600px;
+			text-decoration: none;
+		}
+
+		.forgot{
+			margin-top: 15px;
 		}
