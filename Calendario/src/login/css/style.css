@@ -78,6 +78,11 @@ body{
 			margin-left: 600px;
 			text-decoration: none;
 		}
+		.botaoIniciar{
+			
+			position: absolute;
+			left: 530px;
+		}
 
 		.forgot{
 			margin-top: 15px;
