@@ -70,3 +70,38 @@ body{
 	left: 900px;
 	top: 350px;
 }
+#checa-email{
+	position: absolute;
+	left: 900px;
+	top: 270px;
+}
+
+/*    Sucesso.html  */ 
+
+.arte img{
+	width: 350px;
+	height: 250px;
+	position: relative;
+	left: 500px;
+}
+
+.texto{
+	text-align: center;
+	color:  #fff;
+	text-decoration: none;
+}
+
+.texto button{
+	border-radius: 4px;
+	padding: 15px 25px;
+	margin-left: 3px;
+	border: 2px solid #1e272e;
+	background-color: #3c40c6;
+	color: #fff;
+}
+.texto button:hover{
+	background-color: #fff;
+	color:  #3c40c6;
+	cursor: pointer;
+}
+

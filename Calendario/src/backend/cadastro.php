@@ -20,5 +20,5 @@ if(! $result){    //Se caso der erro
 	exit;
 }
 
-echo $stmt->rowCount(). "linhas inseridas";  // Mosta mensagem de sucesso. 
+header('Location: ../cadastro/sucesso.html'); 
 ?>
