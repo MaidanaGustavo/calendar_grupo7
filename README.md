@@ -18,6 +18,15 @@ Com a possibilidade de adicionar notas e eventos, o Personal Calendar foi desenv
       - Ver feriados, festas e dias facultativos. 
       - O design do calendario é padrão, você não poderá mudar cor,fontes e etc.
       - Você poderá ter acesso ao periodo de dez anos para frente (da data atual), ou dez anos para trás.
+      
+# Para fazer deploy da aplicação
+  - Para utilizar primeiramente faça o clone do repositório .
+  - Em segundo lugar é necessário que tenha o MYSQL instalado na sua máquina e configurado para ser utilizado.
+  - Após você deve configurar o arquvio connect.php (Calendario/src/backend/connect.php) alterando o user e a password de                   acordo com os dados do seu banco local.
+  - Por fim, deve criar um database a adicionar as tabelas que estão no arquivo calendario.sql(Calendario/src/sql/calendario.sql)
+  - Após feito isso estará apto para usar a aplicação sem ocorrer erros no backend
+  - Para erros verifique se no connect.php os dados colocados correspodem ao seu banco local.
+  - Obs: É necessário estar usando o XAMPP ou WAMPP,e utilizar o sistema de gerenciamento de banco de dados MYSQL.
 # Contribuidores 
  - Gustavo Ríbolis Maidana
  - Thomas Ryan Moreira
