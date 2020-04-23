@@ -98,9 +98,13 @@ nav ul li a:hover{
 	background-color: #808e9b;
 	display: flex;
 	padding: 75px 75px;
-	display: flex;
-	position: center;
+	position: relative;
 }
+ .equipe .titulo-equipe{
+	 position: absolute;
+	 left: 45%;
+ }
+
 .avatar{
 	padding: 75px 25px;
 }
@@ -150,7 +154,8 @@ nav ul li a:hover{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 150px 25px;	
+	padding: 150px 25px;
+	position: relative;
 }
 .acessar button{
 	height: 50px;
@@ -170,7 +175,8 @@ nav ul li a:hover{
   transition-duration: 0.3s;
   -webkit-transition-property: transform;
   transition-property: transform;
-  margin-left: 135px;
+  margin-left: 35%;
+  
 }
 .acessar h3{
 	padding: 75px 75px;
@@ -205,6 +211,22 @@ nav ul li a:hover{
 		text-align: center;
 	}
 	
+	.acessar{
+		flex-direction: column;
+	}
+
+	.acessar .logar button{
+		position: absolute;
+		margin-left: 10%;
+	}
+
+	.acessar .cadastro button {
+		position: absolute;
+		margin-left: 16%;
+	}
+
+	
+	
 }
 
 @media (max-width: 1140px){
@@ -216,4 +238,6 @@ nav ul li a:hover{
 		order: -1;
 		text-align: center;
 	}
+	
+	
 }
