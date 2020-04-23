@@ -59,3 +59,14 @@ body{
 	position: absolute;
 	top: 200px;
 }
+.avisosenha{
+	position: absolute;
+	top: 500px;
+	right: 330px;
+	text-shadow: 2px 2px 2px #333;
+}
+#resposta{
+	position: absolute;
+	left: 900px;
+	top: 350px;
+}

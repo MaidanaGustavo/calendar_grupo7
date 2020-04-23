@@ -3,38 +3,49 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Cadastrar</title>
+	<script src="https://kit.fontawesome.com/61f50ee882.js" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<link rel="shortcut icon" href="../img/favicon.ico" />
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<form action="../backend/cadastro.php"  method="post" name="formulario">
 	<div class="cadastro-box">
 		<div class="cadastro-box-label">	
 			Cadastre-se
-			<div class="dados" id="nome">
-				<input type="text" placeholder="Seu nome" required>
+			<div class="dados" >
+				<input id="nome" name="nome" type="text" placeholder="Seu nome" required>
 			</div>
-			<div class="dados" id="sobrenome">
-				<input type="text" placeholder="Seu sobrenome" required>
+			<div class="dados" >
+				<input 	id="sobrenome" name= "sobrenome" type="text" placeholder="Seu sobrenome" required>
 			</div>
-			<div class="dados" id="email">
-				<input type="email" placeholder="Digite seu email" required>
+			<div class="dados" >
+				<input  id="email" name= "email"type="email" placeholder="Digite seu email" required>
 			</div>
-			<div class="dados" id="Usuário">
-				<input type="email" placeholder="Usuário" required>
+			<div class="dados" >
+				<input id="user" name="user" type="text" placeholder="Usuário" required>
 			</div>
-			<div class="dados" id="senha">
-				<input type="password" placeholder="Digite sua senha" required>
+			<div class="dados" >
+				<input  id="senha" name="senha" type="password" placeholder="Digite sua senha" required onkeyup="validarSenha()" >
 			</div>
-			<div class="dados" id="senha-confirm">
-				<input type="password" placeholder="Confirme sua senha" required>
+			<div class="dados" >
+				<input id="senha-confirm" name="senha-confirm" type="password" placeholder="Confirme sua senha" required onkeyup="validarSenha()">
 			</div>
 			<div class="botao">
-			<button>Cadastrar</button>
+			<button id="enviar" >Cadastrar</button>
 			</div>
 		</div>
-	</div>
+		</form>
+		<div class="avisosenha">
+				<span id="mensagem"></span>
+			</div>
+		</div>
+		<span id="resposta">
+			
+		</span>
 	<div class="imagem">
 		<img src="../img/art4.svg" alt="Arte">
 	</div>
+	<script src="javascript/script.js"></script>
 </body>
 </html>
