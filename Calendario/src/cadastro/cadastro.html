@@ -23,13 +23,13 @@
 				<input  id="email" name= "email"type="email" placeholder="Digite seu email" required>
 			</div>
 			<div class="dados" >
-				<input id="user" name="user" type="text" placeholder="Usuário" required>
+				<input id="user" name="user" type="text" placeholder="Usuário" required minlength="4" maxlength="32">
 			</div>
 			<div class="dados" >
-				<input  id="senha" name="senha" type="password" placeholder="Digite sua senha" required onkeyup="validarSenha()" >
+				<input  id="senha" name="senha" type="password" placeholder="Digite sua senha" required onkeyup="validarSenha()"  minlength="8" maxlength="32">
 			</div>
 			<div class="dados" >
-				<input id="senha-confirm" name="senha-confirm" type="password" placeholder="Confirme sua senha" required onkeyup="validarSenha()">
+				<input id="senha-confirm" name="senha-confirm" type="password" placeholder="Confirme sua senha" required onkeyup="validarSenha()" minlength="8" maxlength="32">
 			</div>
 			<div class="botao">
 			<button id="enviar"  onmouseover="checarFormulario()">Cadastrar</button>
