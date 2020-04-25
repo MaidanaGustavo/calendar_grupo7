@@ -2,11 +2,16 @@ body{
 	background-color:#575fcf;
 }
 
+.geral{
+	display: flex;
+	margin-top: 10%;
+}
+
 .box{
 	background-color: white;
 	width: 380px;
 	height: 290px;
-	margin: 140px auto 0px;
+	margin: 50px auto 0px;
 	border-radius: 5px;
 }
 .recuperar-label{
@@ -59,8 +64,15 @@ body{
 }
 
 .imagem img{
-	width: 350px;
-	height: 250px;
-	position: absolute;
-	top: 200px;
+	width: 35em;
+	height: 25em;
+	top: 50px;
+}
+
+@media (max-width: 1000px){
+	.geral{
+		flex-direction: column;
+		text-align: center;
+	}
+
 }

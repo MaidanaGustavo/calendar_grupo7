@@ -1,12 +1,17 @@
 body{
 	background-color:#575fcf;
 }
+.geral{
+	display: flex;
+	margin-top: 10%;
+}
 .cadastro-box{
 	background-color: white;
 	width: 400px;
 	height: 580px;
-	margin: 40px auto 0px;
+	margin: -5px auto 0px;
 	border-radius: 5px;
+	
 }
 .cadastro-box-label{
 	height: 45px;
@@ -54,9 +59,8 @@ body{
 	cursor: pointer;
 }
 .imagem img{
-	width: 350px;
-	height: 250px;
-	position: absolute;
+	width: 35em;
+	height: 25em;
 	top: 200px;
 }
 .avisosenha{
@@ -79,16 +83,17 @@ body{
 /*    Sucesso.html  */ 
 
 .arte img{
-	width: 350px;
-	height: 250px;
-	position: relative;
-	left: 500px;
+	width: 35em;
+	height: 25em;
+	margin-left: 20%;
 }
 
 .texto{
 	text-align: center;
 	color:  #fff;
 	text-decoration: none;
+	margin-left: 15%;
+	margin-top: 5%;
 }
 
 .texto button{
@@ -105,3 +110,21 @@ body{
 	cursor: pointer;
 }
 
+@media (max-width: 1000px){	
+	.geral{
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.cadastro-box{
+		margin-top: 20px;
+	}
+
+	.arte img{
+		margin-left: 0%;
+	}
+
+	.texto{
+		margin-left: 0%;
+	}
+}

@@ -3,14 +3,24 @@ body{
 	position: relative;
 }
 
+.geral{
+	display: flex;
+	margin-top: 10%;
+}
 
+.gerals{
+	display: flex;
+	margin: 50px auto 30px;
+	flex-direction: column;
+}
 
 #login-box{
 	background-color: white;
 	width: 380px;
 	height: 290px;
-	margin: 140px 30% 30px;
+	margin: 140px auto 30px;
 	border-radius: 5px;
+	margin-top: 7%;
 }
 
 #login-box-label{
@@ -85,22 +95,24 @@ body{
 	cursor: pointer;
 }
 
-.ilustra img{
+.geral img{
 	width: 35em;
 	height: 25em;
-	position: absolute;
-	top: 0px;
+	top: 50px;
+	margin: 0px auto 30px;
 }
 		
 .forgot a{
 	color: #fff;
 	text-decoration: none;
-	margin: 140px 28% -30px;
+	margin: 30px auto -30px;
+	padding: 5px 10px;
+	margin-left: 40%;
 }
 
 .botaoIniciar{
-	position: absolute;
-	margin: 30px 36% -30px;
+	margin: 30px 45% -30px;
+	min-width: 200px;
 }
 
 .forgot{
@@ -108,63 +120,26 @@ body{
 	margin-left: 13%;
 }
 
-@media (max-width: 1500px){
-
-	.ilustra img{
-		opacity: 0;
+@media (max-width: 1000px){
+	.geral{
+		flex-direction: column;
+		text-align: center;
 	}
 
 	#login-box{
-		margin: 140px 15% 30px;
+		margin: 140px auto 30px;
 	}
 
 	.forgot{
-		margin-left: -5%;
+		margin-left: 22%;
+	}
+
+	.forgot a{
+		margin-left: 29%;
 	}
 	
 	.botaoIniciar{
-		margin-left: 20%;
+		margin-left: 41%;
 	}
 
 }
-
-
-
-/*
-
-@media (max-width: 1450px){
-	.forgot a{
-		margin-left: 45%;
-	}
-
-	#botoes .botaoIniciar{
-		margin-left: 6%;
-	}
-
-}
-
-
-
-@media (max-width: 1024px){
-
-	#login-box{
-		margin: 140px 28% 0px;
-	}
-
-	#botoes .botaoIniciar{
-		margin-left: -10%;
-	}
-
-}
-
-@media (max-width: 768px){
-	.forgot a{
-		margin-left: 44%;
-	}
-
-	#botoes .botaoIniciar{
-		margin-left: -30%;
-	}
-
-}
-*/
