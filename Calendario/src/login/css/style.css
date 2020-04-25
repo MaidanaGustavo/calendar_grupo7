@@ -1,89 +1,170 @@
 body{
-			background-color:#575fcf;
-		}
-		#login-box{
-			background-color: white;
-			width: 380px;
-			height: 290px;
-			margin: 140px auto 0px;
-			border-radius: 5px;
-		}
-		#login-box-label{
-			height: 45px;
-			text-align: center;
-			font: bold 14px/45px sans-serif;
-			border-bottom: 1px solid;
-			box-shadow: 1px 0px 3px black;
-			color: #555555;
-			text-shadow: 1px 0px 1px white; 
-		}
-		.input-div{
-			margin: 20px;
-			padding: 5px;
-			background-color: #f2f5f7;
-			border-radius: 3px;
-		}
-		.input-div input{
-			width: 310px;
-			height: 35px;
-			padding-left: 5px;
-			font: normal 13px sans-serif;
-			color: #333;
-			border-radius: 3px;
-			border: 1px solid #bfc4c6;
-			outline: none;
-		}
-		.input-div:hover{
-			background-color: #e0f1fc;
-		}
-		.input-div:hover input{
-			border-color: #3c40c6;
-		}
-		#input-senha{
-			margin-top: -10px; 
-		}
-		#botoes{
-			display: flex;
-			padding: 5px 10px;
-		}
-		#botoes button{
-			border-radius: 4px;
-			padding: 15px 25px;
-			margin-left: 50px;
-			border: 2px solid #1e272e;
-			background-color: #3c40c6;
-			color: #fff;
-		}
-		#botoes button:hover{
-			background-color: #fff;
-			color:  #3c40c6;
-			cursor: pointer;
-		}
-		#botoes .container{
-			display: block;
-			position: relative;
-		}
-		#botoes .container  input{
-			cursor: pointer;
-		}
-		.ilustra img{
-			width: 350px;
-			height: 250px;
-			position: absolute;
-			top: 200px;
-		}
-		
-		.forgot a{
-			color: #fff;
-			margin-left: 600px;
-			text-decoration: none;
-		}
-		.botaoIniciar{
-			
-			position: absolute;
-			left: 530px;
-		}
+	background-color:#575fcf;
+	position: relative;
+}
 
-		.forgot{
-			margin-top: 15px;
-		}
+
+
+#login-box{
+	background-color: white;
+	width: 380px;
+	height: 290px;
+	margin: 140px 30% 30px;
+	border-radius: 5px;
+}
+
+#login-box-label{
+	height: 45px;
+	text-align: center;
+	font: bold 14px/45px sans-serif;
+	border-bottom: 1px solid;
+	box-shadow: 1px 0px 3px black;
+	color: #555555;
+	text-shadow: 1px 0px 1px white; 
+}
+
+.input-div{
+	margin: 20px;
+	padding: 5px;
+	background-color: #f2f5f7;
+	border-radius: 3px;
+}
+
+.input-div input{
+	width: 310px;
+	height: 35px;
+	padding-left: 5px;
+	font: normal 13px sans-serif;
+	color: #333;
+	border-radius: 3px;
+	border: 1px solid #bfc4c6;
+	outline: none;
+}
+
+.input-div:hover{
+	background-color: #e0f1fc;
+}
+
+.input-div:hover input{
+	border-color: #3c40c6;
+}
+
+#input-senha{
+	margin-top: -10px; 
+}
+
+#botoes{
+	display: flex;
+	padding: 5px 10px;
+}
+
+#botoes button{
+	border-radius: 4px;
+	padding: 15px 25px;
+	border: 2px solid #1e272e;
+	background-color: #3c40c6;
+	color: #fff;
+}
+
+#botoes .login{
+	margin-left: 50px;
+}
+
+#botoes button:hover{
+	background-color: #fff;
+	color:  #3c40c6;
+	cursor: pointer;
+}
+
+#botoes .container{
+	display: block;
+	position: relative;
+}
+
+#botoes .container  input{
+	cursor: pointer;
+}
+
+.ilustra img{
+	width: 35em;
+	height: 25em;
+	position: absolute;
+	top: 0px;
+}
+		
+.forgot a{
+	color: #fff;
+	text-decoration: none;
+	margin: 140px 28% -30px;
+}
+
+.botaoIniciar{
+	position: absolute;
+	margin: 30px 36% -30px;
+}
+
+.forgot{
+	margin-top: 15px;
+	margin-left: 13%;
+}
+
+@media (max-width: 1500px){
+
+	.ilustra img{
+		opacity: 0;
+	}
+
+	#login-box{
+		margin: 140px 15% 30px;
+	}
+
+	.forgot{
+		margin-left: -5%;
+	}
+	
+	.botaoIniciar{
+		margin-left: 20%;
+	}
+
+}
+
+
+
+/*
+
+@media (max-width: 1450px){
+	.forgot a{
+		margin-left: 45%;
+	}
+
+	#botoes .botaoIniciar{
+		margin-left: 6%;
+	}
+
+}
+
+
+
+@media (max-width: 1024px){
+
+	#login-box{
+		margin: 140px 28% 0px;
+	}
+
+	#botoes .botaoIniciar{
+		margin-left: -10%;
+	}
+
+}
+
+@media (max-width: 768px){
+	.forgot a{
+		margin-left: 44%;
+	}
+
+	#botoes .botaoIniciar{
+		margin-left: -30%;
+	}
+
+}
+*/
