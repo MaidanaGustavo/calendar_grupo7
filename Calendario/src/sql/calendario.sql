@@ -18,6 +18,3 @@ CREATE TABLE notas(
  idUsuario int,
  CONSTRAINT fk_usuario FOREIGN KEY(idUsuario) REFERENCES usuario(id)
 );
-
-
-insert into usuarios (nome, email, senha ) values ('admin', 'admin@hotmail.com', '123456');
