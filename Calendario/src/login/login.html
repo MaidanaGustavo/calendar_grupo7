@@ -2,6 +2,8 @@
 <html>
 <head>
 	<title>Página de Login</title>
+	<script src="https://kit.fontawesome.com/61f50ee882.js" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<link rel="shortcut icon" href="../img/favicon.ico" />
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/style.css">
@@ -15,23 +17,26 @@
 		
 	
 		<div id="login-box">
-			<div id="login-box-label">
+			<div id="login-box-label" method="POST">
 				Login
 				<div class="input-div" id="input-usuario">
-					<input type="text" placeholder ="Usuário ou email">
+					<input id="user" type="text" placeholder ="Usuário ou email">
 				</div>
 				<div class="input-div" id="input-senha">
-					<input type="password" placeholder ="Password">
+					<input id="senha" type="password" placeholder ="Password">
 				</div>
 				<div id="botoes">
 					<label  class="container">
 						<input type="checkbox">
 						<span class="checkmark">Lembrar minha senha?</span>
 					</label>
-					<button class="login">Login</button>
+					<button class="login" onclick="javascript:validar()">Login</button>
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class="avisologin">
+		<span id="mensagem"></span>
 	</div>
 	<div class="gerals">
 		<div class="forgot">
@@ -40,5 +45,7 @@
 	
 		<div id="botoes"><button class="botaoIniciar" onclick="window.location.href='javascript:history.back()'">Voltar a página inicial</button></div>
 	</div>
+
+	<script src="javascript/login.js"></script>
 </body>
 </html>
