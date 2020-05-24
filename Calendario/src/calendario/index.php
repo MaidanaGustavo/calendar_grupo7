@@ -1,3 +1,4 @@
+
  <!DOCTYPE html>
  <html lang="pt-br">
  <head>
@@ -7,6 +8,9 @@
  	
  </head>
  <body onload="Renderizar()">
+	<div class= "nomeUsuario">
+		<?php echo "Bem vindo ".$_GET['nome'] ?>
+	</div>
  	<div class="wrapper">
  		 <div class="calendar">
  		 	<div class="meses">
@@ -33,7 +37,9 @@
  		 	<div class="dias">
  		 		
  		 </div>
- 	</div>
+	 </div>
+	 <?php echo $_SESSION['user'] ?>
+	  
  	<script src="javascript/calendario.js"></script>
  </body>
  </html>

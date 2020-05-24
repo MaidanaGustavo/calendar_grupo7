@@ -1,59 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-	<meta charset="UTF-8">
-	<title>Cadastrar</title>
-	<script src="https://kit.fontawesome.com/61f50ee882.js" crossorigin="anonymous"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<link rel="shortcut icon" href="../img/favicon.ico" />
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-	
-	<form action="../backend/cadastro.php"  method="post" name="formulario">
-	<div class="geral">
-		<div class="imagem">
-			<img src="../img/art4.svg" alt="Arte">
-		</div>
-		<div class="cadastro-box">
-		<div class="cadastro-box-label">	
-			Cadastre-se
-			<div class="dados" >
-				<input id="nome" name="nome" type="text" placeholder="Seu nome" required>
-			</div>
-			<div class="dados" >
-				<input 	id="sobrenome" name= "sobrenome" type="text" placeholder="Seu sobrenome" required>
-			</div>
-			<div class="dados" >
-				<input  id="email" name= "email"type="email" placeholder="Digite seu email" required>
-			</div>
-			<div class="dados" >
-				<input id="user" name="user" type="text" placeholder="Usuário" required minlength="4" maxlength="32">
-			</div>
-			<div class="dados" >
-				<input  id="senha" name="senha" type="password" placeholder="Digite sua senha" required onkeyup="validarSenha()"  minlength="8" maxlength="32">
-			</div>
-			<div class="dados" >
-				<input id="senha-confirm" name="senha-confirm" type="password" placeholder="Confirme sua senha" required onkeyup="validarSenha()" minlength="8" maxlength="32">
-			</div>
-			<div class="botao">
-			<button id="enviar"  onmouseover="checarFormulario()">Cadastrar</button>
-			</div>
-		</div>
-		</form>
-		<div class="avisosenha">
-				<span id="mensagem"></span>
-		</div>
-		</div>
-		<span id="resposta">
-			
-		</span>
-
-		<span id="checa-email">
-			
-		</span>
-	</div>
-</div>
-	<script src="javascript/script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cadastro</title>
+  </head>
+  <body>
+    <form action="../usuario/operacao.php" method="POST">
+      <div class="geral">
+        
+        <div class="imagem">
+          <img src="../img/art4.svg" alt="Arte">
+        </div>
+        <div class="cadastro-box">
+          <div class="cadastro-box-label">	
+            Cadastre-se
+            <div class="dados">
+              <input type="text" name="nome" placeholder="Nome" /> <br />
+            </div>
+            <div class="dados">  
+              <input type="text" name="user" placeholder="Usuario" /> <br />
+            </div>
+            <div class="dados">
+            <input type="email" name="email" placeholder="Email" /> <br />
+            </div>
+            <div class="dados">
+              <input type="password" name="senha" id="senha" placeholder="Senha" />
+              <br />
+            </div>
+            <div class="dados">
+              <input
+              type="password"
+              name="confirma"
+              id="confirma"
+              placeholder="Confirme a senha"
+              />
+              <br />
+            </div>
+            <div class="botao">
+              <button type="submit" name="cadastrar">Cadastrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
 </html>

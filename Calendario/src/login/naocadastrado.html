@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Não Cadastrado</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="img-erro">
+      <img src="../img/art7.svg" alt="" />
+    </div>
+    <div class="texto">
+      Usuario não cadastrado
+    </div>
+    <div class="botoes-erro">
+      <button id="cadastro">Cadastre-se agora</button>
+      <button id="login">Faça login</button>
+    </div>
+    <script>
+      document.getElementById("cadastro").onclick = function () {
+        window.location.href = "../cadastro/cadastro.html";
+      };
+      document.getElementById("login").onclick = function () {
+        window.location.href = "login.html";
+      };
+    </script>
+  </body>
+</html>

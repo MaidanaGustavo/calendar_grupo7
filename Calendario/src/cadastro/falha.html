@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Erro</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="imagem-erro">
+      <img src="../img/art6.svg" alt="" />
+    </div>
+    <div class="erro-msg">
+      <h2>Erro</h2>
+      <h3>Usuário já cadastrado!</h3>
+      <button id="botao">Voltar para o cadastro</button>
+    </div>
+    <script>
+      document.getElementById("botao").onclick = function () {
+        window.location.href = "cadastro.html";
+      };
+    </script>
+  </body>
+</html>

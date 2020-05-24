@@ -1,130 +1,158 @@
-body{
-	background-color:#575fcf;
+body {
+  background-color: #575fcf;
 }
-.geral{
-	display: flex;
-	margin-top: 10%;
+.geral {
+  display: flex;
+  margin-top: 10%;
 }
-.cadastro-box{
-	background-color: white;
-	width: 400px;
-	height: 580px;
-	margin: -5px auto 0px;
-	border-radius: 5px;
-	
+.cadastro-box {
+  background-color: white;
+  width: 400px;
+  height: 580px;
+  margin: -5px auto 0px;
+  border-radius: 5px;
 }
-.cadastro-box-label{
-	height: 45px;
-	text-align: center;
-	font: bold 14px/45px sans-serif;
-	border-bottom: 1px solid;
-	box-shadow: 1px 0px 3px black;
-	color: #555555;
-	text-shadow: 1px 0px 1px white; 
+.cadastro-box-label {
+  height: 45px;
+  text-align: center;
+  font: bold 14px/45px sans-serif;
+  border-bottom: 1px solid;
+  box-shadow: 1px 0px 3px black;
+  color: #555555;
+  text-shadow: 1px 0px 1px white;
 }
-.dados{
-	margin: 20px;
-	padding: 5px;
-	background-color: #f2f5f7;
-	border-radius: 3px;
+.dados {
+  margin: 20px;
+  padding: 5px;
+  background-color: #f2f5f7;
+  border-radius: 3px;
 }
-.dados input{
-	width: 310px;
-	height: 35px;
-	padding-left: 5px;
-	font: normal 13px sans-serif;
-	color: #333;
-	border-radius: 3px;
-	border: 1px solid #bfc4c6;
-	outline: none;
+.dados input {
+  width: 310px;
+  height: 35px;
+  padding-left: 5px;
+  font: normal 13px sans-serif;
+  color: #333;
+  border-radius: 3px;
+  border: 1px solid #bfc4c6;
+  outline: none;
 }
-.dados:hover{
-	background-color: #e0f1fc;
+.dados:hover {
+  background-color: #e0f1fc;
 }
-.dados:hover input{
-	border-color: #3c40c6;
-}
-
-.botao button{
-	border-radius: 4px;
-	padding: 15px 25px;
-	margin-left: 3px;
-	border: 2px solid #1e272e;
-	background-color: #3c40c6;
-	color: #fff;
-}
-.botao button:hover{
-	background-color: #fff;
-	color:  #3c40c6;
-	cursor: pointer;
-}
-.imagem img{
-	width: 35em;
-	height: 25em;
-	top: 200px;
-}
-.avisosenha{
-	position: absolute;
-	top: 500px;
-	right: 330px;
-	text-shadow: 2px 2px 2px #333;
-}
-#resposta{
-	position: absolute;
-	left: 900px;
-	top: 350px;
-}
-#checa-email{
-	position: absolute;
-	left: 900px;
-	top: 270px;
+.dados:hover input {
+  border-color: #3c40c6;
 }
 
-/*    Sucesso.html  */ 
-
-.arte img{
-	width: 35em;
-	height: 25em;
-	margin-left: 20%;
+.botao button {
+  border-radius: 4px;
+  padding: 15px 25px;
+  margin-left: 3px;
+  border: 2px solid #1e272e;
+  background-color: #3c40c6;
+  color: #fff;
+}
+.botao button:hover {
+  background-color: #fff;
+  color: #3c40c6;
+  cursor: pointer;
+}
+.imagem img {
+  width: 35em;
+  height: 25em;
+  top: 200px;
+}
+.avisosenha {
+  position: absolute;
+  top: 500px;
+  right: 330px;
+  text-shadow: 2px 2px 2px #333;
+}
+#resposta {
+  position: absolute;
+  left: 900px;
+  top: 350px;
+}
+#checa-email {
+  position: absolute;
+  left: 900px;
+  top: 270px;
 }
 
-.texto{
-	text-align: center;
-	color:  #fff;
-	text-decoration: none;
-	margin-left: 15%;
-	margin-top: 5%;
+/*    Sucesso.html  */
+
+.arte img {
+  width: 35em;
+  height: 25em;
+  margin-left: 20%;
 }
 
-.texto button{
-	border-radius: 4px;
-	padding: 15px 25px;
-	margin-left: 3px;
-	border: 2px solid #1e272e;
-	background-color: #3c40c6;
-	color: #fff;
-}
-.texto button:hover{
-	background-color: #fff;
-	color:  #3c40c6;
-	cursor: pointer;
+.texto {
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 15%;
+  margin-top: 5%;
 }
 
-@media (max-width: 1000px){	
-	.geral{
-		flex-direction: column;
-		text-align: center;
-	}
+.texto button {
+  border-radius: 4px;
+  padding: 15px 25px;
+  margin-left: 3px;
+  border: 2px solid #1e272e;
+  background-color: #3c40c6;
+  color: #fff;
+}
+.texto button:hover {
+  background-color: #fff;
+  color: #3c40c6;
+  cursor: pointer;
+}
 
-	.cadastro-box{
-		margin-top: 20px;
-	}
+@media (max-width: 1000px) {
+  .geral {
+    flex-direction: column;
+    text-align: center;
+  }
 
-	.arte img{
-		margin-left: 0%;
-	}
+  .cadastro-box {
+    margin-top: 20px;
+  }
 
-	.texto{
-		margin-left: 0%;
-	}
+  .arte img {
+    margin-left: 0%;
+  }
+
+  .texto {
+    margin-left: 0%;
+  }
+}
+
+/**** Erro    ************/
+.imagem-erro img {
+  width: 35em;
+  height: 25em;
+  margin-left: 400px;
+}
+
+.erro-msg {
+  margin-left: 600px;
+}
+.erro-msg h2 {
+  margin-left: 75px;
+}
+
+.erro-msg button {
+  border-radius: 4px;
+  padding: 15px 25px;
+  margin-left: 3px;
+  border: 2px solid #1e272e;
+  background-color: #3c40c6;
+  color: #fff;
+}
+
+.erro-msg button:hover {
+  background-color: #fff;
+  color: #3c40c6;
+  cursor: pointer;
 }
