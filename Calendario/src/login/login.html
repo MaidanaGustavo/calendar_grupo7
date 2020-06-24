@@ -17,16 +17,17 @@
     <div class="geral">
       <img src="../img/art2.svg" alt="" />
 
+      <form action="logar.php" method="POST" >
       <div id="login-box">
         <div id="login-box-label">
           Login
           <form action="../usuario/operacao.php" method="POST">
-          <div class="input-div" id="input-usuario">
+          <div class="input-div" id="input-usuario" name = "usuario">
             <input
               id="user"
               name="usuario"
               type="text"
-              placeholder="Usuário ou email"
+              placeholder="Usuário"
             />
           </div>
           <div class="input-div" id="input-senha">
