@@ -11,7 +11,7 @@ body {
   background-color: #808e9b;
   position: absolute;
   top: 50px;
-  left: 570px;
+  left: 540px;
   font-size: 18pt;
   color: #ffd32a;
 }
@@ -104,4 +104,21 @@ body {
   cursor: pointer;
   background-color: #ffd32a;
   color: #1e272e;
+}
+
+.logout button {
+  width: 150px;
+  height: 25px;
+  position: absolute;
+  right: 5px;
+  top: 25px;
+  color: #ffd32a;
+  background-color: #1e272e;
+  border: none;
+  border-radius: 4px;
+}
+.logout button:hover {
+  cursor: pointer;
+  color: #1e272e;
+  background-color: #ffd32a;
 }

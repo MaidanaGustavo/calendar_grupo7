@@ -3,38 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <title>Cadastro</title>
   </head>
   <body>
     <form action="processa.php" method="POST">
       <div class="geral">
-        
         <div class="imagem">
-          <img src="../img/art4.svg" alt="Arte">
+          <img src="../img/art4.svg" alt="Arte" />
         </div>
         <div class="cadastro-box">
-          <div class="cadastro-box-label">	
+          <div class="cadastro-box-label">
             Cadastre-se
             <div class="dados">
-              <input type="text" name="nome" placeholder="Nome" /> <br />
-            </div>
-            <div class="dados">  
-              <input type="text" name="user" placeholder="Usuario" /> <br />
+              <input type="text" name="nome" placeholder="Nome" required />
+              <br />
             </div>
             <div class="dados">
-            <input type="email" name="email" placeholder="Email" /> <br />
+              <input type="text" name="user" placeholder="Usuario" required />
+              <br />
             </div>
             <div class="dados">
-              <input type="password" name="senha" id="senha" placeholder="Senha" />
+              <input type="email" name="email" placeholder="Email" required />
               <br />
             </div>
             <div class="dados">
               <input
-              type="password"
-              name="confirma"
-              id="confirma"
-              placeholder="Confirme a senha"
+                type="password"
+                name="senha"
+                id="senha"
+                placeholder="Senha"
+                required
+              />
+              <br />
+            </div>
+            <div class="dados">
+              <input
+                type="password"
+                name="confirma"
+                id="confirma"
+                placeholder="Confirme a senha"
+                required
               />
               <br />
             </div>

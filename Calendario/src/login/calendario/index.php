@@ -3,15 +3,32 @@
  <html lang="pt-br">
  <head>
  	<meta charset="UTF-8">
- 	<title> Personal Calendar</title>
+	 <title> Personal Calendar</title>
  	<link rel="stylesheet" href="css/style.css">
- 	
+	 <script src="https://kit.fontawesome.com/61f50ee882.js" crossorigin="anonymous"></script>
  </head>
  <body onload="Renderizar()">
 	<div class= "nomeUsuario">
-		<?php echo "Bem vindo ".$_GET['nome'] ?>
+		<?php 
+		
+		$nome  = $_COOKIE['usuarioNome'];	
+		if(isset($nome)){
+		echo "Bem vindo ".$nome ;
+		}
+		?>
 	</div>
+
  	<div class="wrapper">
+	 <div class="logout">
+	 <form action="../logout.php
+	 ">
+	 
+	 <button>
+	 <i class="fas fa-sign-out-alt"></i>	
+	 Sair
+		</button>
+	 </form>
+	 </div>
  		 <div class="calendar">
  		 	<div class="meses">
 				<div class="voltar" onclick="moveDate('voltar')">
@@ -38,7 +55,6 @@
  		 		
  		 </div>
 	 </div>
-	 <?php echo $_SESSION['user'] ?>
 	  
  	<script src="javascript/calendario.js"></script>
  </body>
