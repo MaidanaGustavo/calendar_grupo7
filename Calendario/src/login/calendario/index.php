@@ -55,7 +55,36 @@
  		 		
  		 </div>
 	 </div>
-	  
+
+	 <div class="criarNota">
+		<a href="./nota/nota.html"><i class="fas fa-plus"></i>Criar nota</a>
+	 </div>
+	 <div class="minhasNotas">
+	 <a href="verNotas/minhasNotas.php"><i class="fas fa-eye"></i>Minhas notas</a>
+	 </div>
+	  <div class="notaHoje">
+		<?php
+			include '../../cadastro/conexao.php';
+			$idUsuario = $_COOKIE['usuarioid'];
+			$query1 = "SELECT  * FROM notas WHERE idUsuario = '$idUsuario'";
+			$queryExecute = mysqli_query($conn,$query1);
+			$row = $queryExecute->fetch_array(MYSQLI_NUM);
+			$numeRows = $queryExecute->num_rows;
+			if($numeRows>0){			
+				$dataAtual = date('Y-m-d');
+				while($linhas = $queryExecute->fetch_array()){
+					$rows[] = $linhas;
+				}
+				
+				foreach($rows as $linha){
+					if($linha['dataNota'] == $dataAtual){
+					echo '<div class="today" white-space: normal >'.$linha['texto'].'<br>'.
+					$linha['dataNota'].'</div>';
+				}
+				}
+			}
+		?>
+	  </div>
  	<script src="javascript/calendario.js"></script>
  </body>
  </html>

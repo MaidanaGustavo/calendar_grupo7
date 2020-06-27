@@ -15,6 +15,7 @@ include ('../cadastro/conexao.php');
             $_SESSION['usuarioNome'] = $row[1];
             $usuarioNome = $_SESSION['usuarioNome'];
             setcookie('usuarioNome',$_SESSION['usuarioNome']);
+            setcookie('usuarioid',$_SESSION['usuarioid']);
             $nome  = $_COOKIE['usuarioNome'];	
            header("location: calendario/index.php");
         }else{

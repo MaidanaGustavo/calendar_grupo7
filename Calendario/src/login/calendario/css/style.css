@@ -11,7 +11,7 @@ body {
   background-color: #808e9b;
   position: absolute;
   top: 50px;
-  left: 540px;
+  left: 580px;
   font-size: 18pt;
   color: #ffd32a;
 }
@@ -121,4 +121,88 @@ body {
   cursor: pointer;
   color: #1e272e;
   background-color: #ffd32a;
+}
+.notaHoje {
+  width: 300px;
+  height: 100px;
+  background-color: #808e9b;
+  position: absolute;
+  left: 25px;
+}
+.today {
+  background-color: #fff;
+  color: #1e272e;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  word-wrap: break-word;
+  min-height: 25px;
+  max-height: 55px;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.today:hover {
+  background-color: #1e272e;
+  color: #ffd32a;
+}
+.criarNota {
+  padding: 15px 25px;
+  border-radius: 32px;
+  background-color: #fff;
+  position: absolute;
+  right: 50px;
+  top: 92px;
+
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.criarNota:hover,
+.criarNota:focus,
+.criarNota:active {
+  -webkit-transform: scale(1.1) rotate(4deg);
+  transform: scale(1.1) rotate(4deg);
+  cursor: pointer;
+}
+.criarNota a {
+  text-decoration: none;
+  color: #1e272e;
+}
+
+.minhasNotas {
+  padding: 15px 25px;
+  border-radius: 32px;
+  background-color: #fff;
+  position: absolute;
+  right: 50px;
+  top: 200px;
+
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.minhasNotas:hover,
+.minhasNotas:focus,
+.minhasNotas:active {
+  -webkit-transform: scale(1.1) rotate(4deg);
+  transform: scale(1.1) rotate(4deg);
+  cursor: pointer;
+}
+.minhasNotas a {
+  text-decoration: none;
+  color: #1e272e;
 }

@@ -1,0 +1,26 @@
+body {
+  background-color: #1e272e;
+}
+.notaHoje {
+  width: 300px;
+  height: 100px;
+  background-color: #808e9b;
+  position: absolute;
+  left: 25px;
+}
+.today {
+  background-color: #fff;
+  color: #1e272e;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  word-wrap: break-word;
+  min-height: 25px;
+  max-height: 350px;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.today:hover {
+  background-color: #1e272e;
+  color: #ffd32a;
+}

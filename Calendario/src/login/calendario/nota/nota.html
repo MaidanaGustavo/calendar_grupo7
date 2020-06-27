@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Criar Nota</title>
+  </head>
+  <body>
+    <form action="../criaNota.php" method="POST">
+      <input
+        type="text"
+        name="texto"
+        id="texto"
+        maxlength="50"
+        placeholder="Digite aqui seu lembrete"
+        required
+      />
+      <br />
+      <input type="date" name="data" id="data" required />
+      <br />
+      <button>Criar</button>
+    </form>
+  </body>
+</html>
