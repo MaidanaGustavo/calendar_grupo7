@@ -1,21 +1,19 @@
-<?php
-    include_once("conexao.php");
-
-    $nome=$_POST['nome'];
-    $usuario=$_POST['user'];
-    $email=$_POST['email'];
-    $senha=md5($_POST['senha']);
+<?php 
+session_start();
+include_once("conexao.php");
 
 
-    //echo "Nome: $nome <br>";
-    //echo "Usuario: $usuario <br>";
-    //echo "Email: $email <br>";
-    //echo "Senha: $senha <br>";
+//captura valores do input
+$nome = mysqli_real_escape_string($conn, trim($_POST['nome']));
+$user = mysqli_real_escape_string($conn, trim($_POST['user']));
+$email = mysqli_real_escape_string($conn, trim($_POST['email']));
+$senha = mysqli_real_escape_string($conn, trim(md5($_POST['senha'])));
+$confirma = mysqli_real_escape_string($conn, trim(md5($_POST['confirma'])));
 
-    $result_usuarios="INSERT INTO usuario (nome, usuario, email,senha) VALUES ('$nome', '$usuario', '$email','$senha')";
-    $resultado_usuario=mysqli_query($conn,$result_usuarios);
+//Cadastra usuário
+$sql = "INSERT INTO usuario(nome, usuario, email, senha) VALUES ('$nome', '$user', '$email', '$senha')";
 
-    if($resultado_usuario){
-        header("location: sucesso.html");
-    }
+$execute = mysqli_query($conn,$sql);
+header('Location: sucesso.html');
 ?>
+

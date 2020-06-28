@@ -3,11 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="text/javascript"
+      src="//ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"
+    ></script>
     <link rel="stylesheet" href="css/style.css" />
     <title>Cadastro</title>
   </head>
   <body>
-    <form action="processa.php" method="POST">
+    <form id="form" action="processa.php" method="POST">
       <div class="geral">
         <div class="imagem">
           <img src="../img/art4.svg" alt="Arte" />
@@ -16,15 +20,34 @@
           <div class="cadastro-box-label">
             Cadastre-se
             <div class="dados">
-              <input type="text" name="nome" placeholder="Nome" required />
+              <input type="text" name="nome" placeholder="Nome" /> <br />
+            </div>
+            <div class="dados">
+              <ul
+                class="resultado"
+                id="res"
+                style="
+                  text-align: left;
+                  margin-top: 0%;
+                  margin-bottom: 0%;
+                  margin-left: -7%;
+                "
+              ></ul>
+              <input type="text" name="user" id="user" placeholder="Usuario" />
               <br />
             </div>
             <div class="dados">
-              <input type="text" name="user" placeholder="Usuario" required />
-              <br />
-            </div>
-            <div class="dados">
-              <input type="email" name="email" placeholder="Email" required />
+              <ul
+                class="emailunico"
+                id="res"
+                style="
+                  text-align: left;
+                  margin-top: 0%;
+                  margin-bottom: 0%;
+                  margin-left: -7%;
+                "
+              ></ul>
+              <input type="email" id="email" name="email" placeholder="Email" />
               <br />
             </div>
             <div class="dados">
@@ -33,26 +56,38 @@
                 name="senha"
                 id="senha"
                 placeholder="Senha"
-                required
               />
               <br />
             </div>
             <div class="dados">
+              <ul
+                class="senhaErrada"
+                id="res"
+                style="
+                  text-align: left;
+                  margin-top: 0%;
+                  margin-bottom: 0%;
+                  margin-left: -7%;
+                "
+              ></ul>
               <input
                 type="password"
                 name="confirma"
                 id="confirma"
                 placeholder="Confirme a senha"
-                required
               />
               <br />
             </div>
+
             <div class="botao">
-              <button type="submit" name="cadastrar">Cadastrar</button>
+              <button id="cadastrar" type="submit" name="cadastrar">
+                Cadastrar
+              </button>
             </div>
           </div>
         </div>
       </div>
     </form>
+    <script type="text/javascript" src="personalizado.js"></script>
   </body>
 </html>
