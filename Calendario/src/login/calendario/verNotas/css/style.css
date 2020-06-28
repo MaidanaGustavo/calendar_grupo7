@@ -1,6 +1,10 @@
 body {
   background-color: #1e272e;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
 .notaHoje {
   width: 300px;
   height: 100px;
@@ -23,4 +27,44 @@ body {
 .today:hover {
   background-color: #1e272e;
   color: #ffd32a;
+}
+.eliminar-today {
+  position: relative;
+  bottom: 45px;
+  left: 1200px;
+  display: table;
+}
+
+.eliminar-today a {
+  color: crimson;
+  transition: all 0.2s ease-in-out;
+}
+
+button {
+  position: absolute;
+  top: 550px;
+  left: 650px;
+  cursor: pointer;
+  background-color: #ffd32a;
+  color: #1e272e;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 2px;
+
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+}
+
+button:hover,
+button:focus,
+button:active {
+  -webkit-transform: scale(1.1) rotate(4deg);
+  transform: scale(1.1) rotate(4deg);
+  cursor: pointer;
 }

@@ -6,6 +6,5 @@
 
     $conn= new mysqli($host,$usuario,$senha,$bd);
     
-    
 
 ?>
