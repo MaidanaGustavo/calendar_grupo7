@@ -31,7 +31,7 @@ Com a possibilidade de adicionar notas e eventos, o Personal Calendar foi desenv
  - Gustavo Ríbolis Maidana
  - Thomas Ryan Moreira
  - Keven Costa
- - Eduardo Torres
+ 
  
 # Licença de Uso
   Este projeto usa  seguinte licença : GNU General Public License v3.0
